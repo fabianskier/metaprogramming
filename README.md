@@ -2,9 +2,9 @@
 
 ## Concepts
 
-`quote`: return the AST representation of an expression.
-`unquote`: allows values to be injected into an AST that is being defined.
-`macros`: are code that write code.
+- `quote`: return the AST representation of an expression.
+- `unquote`: allows values to be injected into an AST that is being defined.
+- `macros`: are code that write code.
 
 All Elixir code is represented as a series of three-element tuples with the following format:
 - The first element is an atom denoting the function call, or another tuple, representing a nested node in AST
