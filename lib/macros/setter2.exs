@@ -1,0 +1,9 @@
+defmodule Setter do
+
+  defmacro bind_name(string) do
+    quote do
+      # !var macro can be used to explicitly override hygiene within a quoted expression
+      var!(name) = unquote(string)
+    end
+  end
+end
